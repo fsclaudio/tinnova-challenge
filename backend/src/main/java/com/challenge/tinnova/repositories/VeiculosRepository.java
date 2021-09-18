@@ -7,5 +7,5 @@ import com.challenge.tinnova.entities.Veiculos;
 
 @Repository
 public interface VeiculosRepository extends JpaRepository<Veiculos, Long> {
-
+	
 }

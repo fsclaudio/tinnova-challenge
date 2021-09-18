@@ -7,6 +7,8 @@ import java.util.stream.Collectors;
 import javax.persistence.EntityNotFoundException;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -22,10 +24,11 @@ public class VeiculosService {
 	@Autowired
 	public VeiculosRepository repository;
 	
+
 	@Transactional(readOnly = true)
-	public List<VeiculosDTO> findAll() {
-		List<Veiculos> list = repository.findAll();
-		return list.stream().map(x -> new VeiculosDTO(x)).collect(Collectors.toList());
+	public Page<VeiculosDTO> findAllPaged(PageRequest pageRequest) {
+		Page<Veiculos> list = repository.findAll(pageRequest);
+		return list.map(x -> new VeiculosDTO(x));
 	}
 	
 	@Transactional(readOnly = true)
