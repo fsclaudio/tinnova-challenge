@@ -2,22 +2,26 @@ package com.challenge.tinnova.DTO;
 
 public class VeiculosMarcaDTO {
 	private String marca;
-	private int totalVeiculo;
+	private Long veiculo;
 	
 	public VeiculosMarcaDTO() {	
 	}
 
-	public VeiculosMarcaDTO(String marca, int totalVeiculo) {
+	public VeiculosMarcaDTO(String marca, Long veiculo) {
+	
 		this.marca = marca;
-		this.totalVeiculo = totalVeiculo;
+		this.veiculo = veiculo;
 	}
+
 
 	public String getMarca() {
 		return marca;
 	}
 
-	public int getTotalVeiculo() {
-		return totalVeiculo;
+	public Long getVeiculo() {
+		return veiculo;
 	}
+
+	
 	
 }

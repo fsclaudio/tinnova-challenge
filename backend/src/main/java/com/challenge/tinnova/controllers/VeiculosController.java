@@ -23,6 +23,8 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import com.challenge.tinnova.DTO.VeiculosDTO;
+import com.challenge.tinnova.DTO.VeiculosDecadaDTO;
+import com.challenge.tinnova.DTO.VeiculosMarcaDTO;
 import com.challenge.tinnova.services.VeiculosService;
 
 import io.swagger.annotations.Api;
@@ -60,6 +62,22 @@ public class VeiculosController {
 		VeiculosDTO dto = service.findById(id);
 		
 		return ResponseEntity.ok().body(dto);
+	}
+	
+	@GetMapping(value = "/marca")
+	@ApiOperation(value = "Retorna a quantidades um veiculos agrupado por marca")
+	public ResponseEntity<List<VeiculosMarcaDTO>> amountMarca(){
+		List<VeiculosMarcaDTO> list = service.amountGroupedMarca();
+		
+		return ResponseEntity.ok(list);
+	}
+	
+	@GetMapping(value = "/ano")
+	@ApiOperation(value = "Retorna a quantidades um veiculos agrupado por Ano")
+	public ResponseEntity<List<VeiculosDecadaDTO>> amountAno(){
+		List<VeiculosDecadaDTO> list = service.amountGroupedDecada();
+		
+		return ResponseEntity.ok(list);
 	}
 	
 	@PostMapping

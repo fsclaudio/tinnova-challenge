@@ -1,5 +1,6 @@
 package com.challenge.tinnova.services;
 
+import java.util.List;
 import java.util.Optional;
 
 import javax.persistence.EntityNotFoundException;
@@ -11,6 +12,8 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.challenge.tinnova.DTO.VeiculosDTO;
+import com.challenge.tinnova.DTO.VeiculosDecadaDTO;
+import com.challenge.tinnova.DTO.VeiculosMarcaDTO;
 import com.challenge.tinnova.entities.Veiculos;
 import com.challenge.tinnova.repositories.VeiculosRepository;
 import com.challenge.tinnova.services.exceptions.ResourceNotFoundException;
@@ -35,6 +38,18 @@ public class VeiculosService {
 		Veiculos entity = obj.orElseThrow(() -> new ResourceNotFoundException("Entity " + id + " not found"));
 		
 		return new VeiculosDTO(entity);
+	}
+	
+	@Transactional(readOnly = true)
+	public List<VeiculosMarcaDTO> amountGroupedMarca(){
+		
+		return repository.amountGroupedByMarca();
+	}
+	
+	@Transactional(readOnly = true)
+	public List<VeiculosDecadaDTO> amountGroupedDecada(){
+		
+		return repository.amountGroupedByAno();
 	}
 	
 	@Transactional
