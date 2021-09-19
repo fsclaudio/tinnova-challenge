@@ -5,7 +5,7 @@
 # Sobre o projeto
 
 Desafio para teste da Tinnova Soluções Soluçoes Inteligentes
-![Web 1](https://tinnova.com.br/#inicio)
+https://tinnova.com.br/#inicio
 
 ## Descrição 
 
@@ -19,10 +19,10 @@ Exercicio Soma Multiplos de 3 e 5
 ![Web 4](https://github.com/fsclaudio/tinnova-challenge/tree/main/ExercicioSomaMultiplos/src)
 
 Exercicio Eleiçoes
-![Web 5](https://github.com/fsclaudio/tinnova-challenge/tree/main/ExercicoEleitores/src)
+https://github.com/fsclaudio/tinnova-challenge/tree/main/ExercicoEleitores/src
 
 Aplicação Backend Cadastro de Veiculos
-![Web 6](https://github.com/fsclaudio/tinnova-challenge/tree/main/backend/src/main/java/com/challenge/tinnova)
+https://github.com/fsclaudio/tinnova-challenge/tree/main/backend/src/main/java/com/challenge/tinnova
 
 # Tecnologias utilizadas
 ## Back end
