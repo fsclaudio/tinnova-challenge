@@ -5,23 +5,29 @@
 # Sobre o projeto
 
 Desafio para teste da Tinnova Soluções Soluçoes Inteligentes
+
 https://tinnova.com.br/#inicio
 
 ## Descrição 
 
 Exercio Buble Sort
-![Web 2](https://github.com/fsclaudio/tinnova-challenge/tree/main/ExercicioBubbleSort/src)
+
+https://github.com/fsclaudio/tinnova-challenge/tree/main/ExercicioBubbleSort/src
 
 Exercicio Fatorial
-![Web 3](https://github.com/fsclaudio/tinnova-challenge/tree/main/ExercicioFatorial/src)
+
+https://github.com/fsclaudio/tinnova-challenge/tree/main/ExercicioFatorial/src
 
 Exercicio Soma Multiplos de 3 e 5
-![Web 4](https://github.com/fsclaudio/tinnova-challenge/tree/main/ExercicioSomaMultiplos/src)
+
+https://github.com/fsclaudio/tinnova-challenge/tree/main/ExercicioSomaMultiplos/src
 
 Exercicio Eleiçoes
+
 https://github.com/fsclaudio/tinnova-challenge/tree/main/ExercicoEleitores/src
 
 Aplicação Backend Cadastro de Veiculos
+
 https://github.com/fsclaudio/tinnova-challenge/tree/main/backend/src/main/java/com/challenge/tinnova
 
 # Tecnologias utilizadas
@@ -30,6 +36,10 @@ https://github.com/fsclaudio/tinnova-challenge/tree/main/backend/src/main/java/c
 - Spring Boot
 - JPA / Hibernate
 - Maven
+
+## Banco dados utilizados
+-PostgreSQL
+-H2 Banco em memoria
 
 # Como executar o projeto
 
