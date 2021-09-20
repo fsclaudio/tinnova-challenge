@@ -88,7 +88,7 @@ const Form = () => {
             <input
               {...register('marca', { required: "Campo obrigatório" })}
               name="marca"
-              type="number" className="form-control input-base"
+              type="text" className="form-control input-base"
               placeholder="marca do veiculo"
             />
             {errors.marca &&(
@@ -101,7 +101,7 @@ const Form = () => {
             <input
               {...register('ano', { required: "Campo obrigatório" })}
               name="ano"
-              type="text" className="form-control input-base"
+              type="number" className="form-control input-base"
               placeholder="ano do Veiculo"
             />
             {errors.ano &&(
